@@ -1,0 +1,10 @@
+<div class="image-ref">
+    <img [src]="document.thumbs?.low || 'assets/data-not-found.svg'" [ngClass]="{'contain': !document.thumbs?.low}"/>
+    <span class="chip">
+        {{pages}} Slide{{pages == 1? '': 's'}}
+    </span>
+</div>
+
+<p>
+    {{document!.title}}
+</p>

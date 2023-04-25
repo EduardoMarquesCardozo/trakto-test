@@ -1,0 +1,31 @@
+<div class="flex-center column" style=" background-color: #F5F5F5;">
+    <img src="assets/TraktoEduBanner.png" alt="Trakto edu">
+    <div class="teaching-lite-container">
+        <div class="row card">
+            <div class="filter">
+                <p class="weeks">
+                    Semana 06/02 até 28/02
+                </p>
+                <button type="button" type="button" (click)="this.router.navigate(['/teaching-list'])">
+                    Ver todo conteúdo
+                </button>
+            </div>
+            <div class="title">
+                <h3>
+                    Material didático
+                </h3>
+                <p>
+                    Acesse suas últimas apresentações da aula.
+                </p>
+            </div>
+            <div class="inner-row flex" appHorizontalScroll>
+                <div class="documents" *ngFor="let document of documentList?.data" >
+                    <app-teaching-material-single 
+                        [document]="document" 
+                        [pages]="document.pages?.length || 1"
+                    ></app-teaching-material-single>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

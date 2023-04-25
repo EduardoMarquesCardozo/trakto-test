@@ -1,0 +1,20 @@
+.flex-center{
+    position:absolute;
+    z-index: -1;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color: #252323;
+}
+.module-container{
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 72px;
+        
+    }
+}
+

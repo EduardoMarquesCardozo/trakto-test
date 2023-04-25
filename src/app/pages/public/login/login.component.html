@@ -1,0 +1,32 @@
+<div class="flex-center" style=" background-color: #EFF2F9; height: 100vh;">
+    <div class="login-container">
+        <img src="../../../assets/trakto-logo.svg" />
+        <h3>
+            Olá, faça login em sua conta.
+        </h3>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" >
+            <div class="flex column">
+                <label>E-mail</label>
+                <input type="text" placeholder="E-mail" formControlName="email"/>
+                <!-- <label class="alert" *ngIf="form.controls['email'].invalid && (form.controls['email'].dirty || form.controls['email'].touched)"> -->
+                    <label class="alert" *ngIf="
+                        (form.get('email')?.hasError('required') || form.get('email')?.hasError('email')) && (form.get('email')?.touched || form.get('email')?.dirty)">
+                    Favor informar um e-mail válido
+                </label>
+                {{form.get('email')?.hasError('required') +'+'+form.get('email')?.hasError('email')+'&&' +form.get('email')?.touched +'||'+form.get('email')?.dirty}}
+            </div>
+            <div class="flex column" (click)="erros()">
+                <label>Senha</label>
+                <input type="password" placeholder="*******" formControlName="password"/>
+                <label class="alert" *ngIf="(form.get('password')?.hasError('required')  && (form.get('password')?.touched || form.get('password')?.dirty) )">
+                    Favor informar um e-mail válido
+                </label>
+            </div>
+            <div class="button" >
+                <button type="submit">{{sendingData ? "Entrando...": "Entrar"}}</button>
+            </div>
+        </form>
+
+        
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="header" *ngIf="isLoggedin" [ngClass]="{'dark-mode': this.router.url.includes('modules')}">
+    <div class="flex logo">
+        <img [src]="imageReturn()" alt="trakto-logo">
+        <button (click)="this.router.navigate(['/modules'])" *ngIf="!this.router.url.includes('modules')">
+            <img class="icon" src="assets/logout.svg" alt="logout" > 
+            <p> Trocar de ambiente</p>
+        </button>
+    </div>
+    <div class="data flex-center">
+        <p>
+            <img class="icon" src="assets/calendar.svg" alt="calendar">
+            {{date | date: 'dd/MM/yyyy'}}
+        </p>
+        <p class="notification">
+            <img class="icon" src="assets/notification.svg" alt="notification">
+        </p>
+        <div class="flex-center user-data" (click)="dropdown = !dropdown">
+            <img class="user" src="assets/data-not-found.svg" alt="">
+            <img class="icon" src="assets/dropdown.svg" alt="">
+            <div class="dropdown" *ngIf="dropdown">
+                <a (click)="onLogout()">Logout</a>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>

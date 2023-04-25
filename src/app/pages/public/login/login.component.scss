@@ -1,0 +1,59 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    svg{
+        margin-bottom: 16px;
+    }
+    img{
+        width: 120px;
+        height: 30px;
+    }
+    h3{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: #04183E;
+        margin: 0px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        label{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #0079FF;
+        }
+        .column{
+            > * {
+                padding: 2px 0;
+            }
+            input{
+                border: 1px solid #E4EBFB;
+                border-radius: 4px;
+                background: #FFFFFF;
+                padding: 16px;
+                :focus{
+                    border: 1px solid #66AFFF;
+                }
+            }
+        }
+        button{
+            background: #1DC763;
+            color: #FFF;
+            width: 100%;
+        }
+        .alert{
+            color: #FF0100;
+        }
+    }
+    
+
+}
+
+
+
+
+

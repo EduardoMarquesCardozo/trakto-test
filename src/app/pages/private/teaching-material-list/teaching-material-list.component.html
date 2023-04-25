@@ -1,0 +1,26 @@
+<div class="flex-center" style=" background-color: #F5F5F5;">
+    <div class="teaching-list-container">
+        <div class="title">
+            <h3>
+                Material didático
+            </h3>
+            <p>
+                Acesse suas últimas apresentações da aula.
+            </p>
+        </div>
+        <div>
+            <div class="inner-row">
+                <div *ngFor="let document of documentList?.data" >
+                    <a [href]="'https://editor.trakto.io/editor/'+document.id" target="_blank">
+                    <app-teaching-material-single 
+                        [document]="document" 
+                        [pages]="document.pages?.length || 1"
+                    ></app-teaching-material-single>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+
+    </div>
+</div>

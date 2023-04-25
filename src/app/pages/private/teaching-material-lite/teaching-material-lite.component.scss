@@ -1,0 +1,56 @@
+
+.flex-center{
+    padding: 64px;
+    gap: 48px;
+    img{
+        width: 100%;
+    }
+}
+
+.teaching-lite-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 48px;
+    .card{
+        display: flex;
+        flex-direction: column;
+        padding: 56px 72px;
+        border-radius: 8px;
+        background-color: #FFF;
+        .filter{
+            display: flex;
+            justify-content: space-between;
+            button{
+                
+                padding: 16px 24px;
+                color: #4743FF;
+                background-color: #FFF;
+                border: 1px solid #4743FF;
+                border-radius: 8px;
+            }
+            .weeks{
+                display: initial;
+                padding: 4px 8px;
+                background: #E4EBFB;
+                border-radius: 500px;
+            }
+        }
+        .title{
+            margin-bottom: 45px;
+        }
+        .inner-row{
+            overflow: auto;
+            overflow-x: auto;
+            cursor: grab;
+            gap: 32px;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .documents{
+                width: 310px;
+            }
+        }
+
+    }
+}

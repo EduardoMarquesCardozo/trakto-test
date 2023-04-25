@@ -1,0 +1,19 @@
+<!-- <div class="container">
+    <div class="circle1"></div>
+    <div class="circle2">
+        <img src="assets/StudyBook1.png" alt="Study book"/>
+    </div>
+</div> -->
+<a routerLink="/teaching-lite">
+    <div class="column">
+        <h1 class="flex-center">
+            {{name}}
+        </h1>
+        <hr/>
+        <div class="circle flex-center" [ngClass]="color">
+            <img [src]="path" alt="Study book"/>
+        </div>
+    </div>
+</a>
+
+

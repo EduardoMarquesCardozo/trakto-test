@@ -1,0 +1,22 @@
+.flex-center{
+    .teaching-list-container{
+        padding: 72px 56px;
+        background-color: #FFF;
+        margin: 64px;
+        width: 85%;
+        max-width: 1730px;
+        border-radius: 8px;
+        .title{
+            margin-bottom: 45px;
+        }
+        .inner-row{
+            gap: 32px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            div{
+                width: 100%;
+            }
+        }
+    }
+}
+
