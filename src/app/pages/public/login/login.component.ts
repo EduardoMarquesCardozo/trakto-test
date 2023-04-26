@@ -29,7 +29,6 @@ export class LoginComponent {
       this.auth.login(val.email, val.password)
           .subscribe(
               () => {
-                  console.log("User is logged in");
                   this.router.navigateByUrl('/modules');
               }
           );
@@ -37,6 +36,5 @@ export class LoginComponent {
   }
 
   erros(){
-    console.log(this.form.errors);
   }
 }

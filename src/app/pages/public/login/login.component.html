@@ -8,12 +8,10 @@
             <div class="flex column">
                 <label>E-mail</label>
                 <input type="text" placeholder="E-mail" formControlName="email"/>
-                <!-- <label class="alert" *ngIf="form.controls['email'].invalid && (form.controls['email'].dirty || form.controls['email'].touched)"> -->
                     <label class="alert" *ngIf="
                         (form.get('email')?.hasError('required') || form.get('email')?.hasError('email')) && (form.get('email')?.touched || form.get('email')?.dirty)">
                     Favor informar um e-mail válido
                 </label>
-                {{form.get('email')?.hasError('required') +'+'+form.get('email')?.hasError('email')+'&&' +form.get('email')?.touched +'||'+form.get('email')?.dirty}}
             </div>
             <div class="flex column" (click)="erros()">
                 <label>Senha</label>

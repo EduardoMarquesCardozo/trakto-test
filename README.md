@@ -7,4 +7,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Once inside the application folder run `npm install` to install all project depencencies.
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+In case you don't have angular cli installed use `npm run start` (make sure you have Node v18.10.0).
+Or install it `npm install -g @angular/cli@15.2.0`.
+Run `ng serve` for a dev server. 
+
+Navigate to `http://localhost:4200/`.
+
+## Create a Trakto account
+
+Navigate to `https://www.trakto.io/` and create a account to be able to login.
