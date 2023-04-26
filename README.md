@@ -8,7 +8,9 @@ Once inside the application folder run `npm install` to install all project depe
 ## Development server
 
 In case you don't have angular cli installed use `npm run start` (make sure you have Node v18.10.0).
+
 Or install it `npm install -g @angular/cli@15.2.0`.
+
 Run `ng serve` for a dev server. 
 
 Navigate to `http://localhost:4200/`.
