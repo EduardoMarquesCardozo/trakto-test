@@ -8,7 +8,6 @@ import { IDocument } from "../data/document";
 @Injectable({ providedIn: 'root' })
 export class DocumentService {
     constructor(
-        private router: Router,
         private http: HttpClient
     ) {
     }

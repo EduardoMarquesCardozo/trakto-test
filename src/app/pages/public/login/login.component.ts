@@ -24,7 +24,6 @@ export class LoginComponent {
 
   onSubmit(){
     const val = this.form.value;
-
     if (val.email && val.password) {
       this.auth.login(val.email, val.password)
           .subscribe(
@@ -33,8 +32,5 @@ export class LoginComponent {
               }
           );
     }
-  }
-
-  erros(){
   }
 }

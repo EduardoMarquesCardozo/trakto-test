@@ -9,6 +9,7 @@ import { DocumentService } from 'src/app/services/document-service';
   templateUrl: './teaching-material-lite.component.html',
   styleUrls: ['./teaching-material-lite.component.scss']
 })
+
 export class TeachingMaterialLiteComponent implements OnInit {
   documentList!: Pagination<IDocument>;
   isDown = false;
@@ -18,9 +19,7 @@ export class TeachingMaterialLiteComponent implements OnInit {
 
   ngOnInit(): void {
     this.getLiteDocuments();
-    
   }
-  
 
   redirectToList(){
     this.router.navigate(["/teaching-list"])
@@ -29,10 +28,9 @@ export class TeachingMaterialLiteComponent implements OnInit {
   getLiteDocuments(){
     this.documentService.get()
     .subscribe(
-        (result) => {
-          this.documentList = result;
-        }
+      (result) => {
+        this.documentList = result;
+      }
     );
   }
-
 }
