@@ -18,3 +18,7 @@ Navigate to `http://localhost:4200/`.
 ## Create a Trakto account
 
 Navigate to `https://www.trakto.io/` and create a account to be able to login.
+
+## Run tests
+
+To run the tests you need to use `ng test`.
