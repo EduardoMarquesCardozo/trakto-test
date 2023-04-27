@@ -17,7 +17,7 @@
             <label>Senha</label>
             <input type="password" placeholder="*******" formControlName="password" />
             <label class="alert" *ngIf="(form.get('password')?.hasError('required')  && (form.get('password')?.touched || form.get('password')?.dirty) )">
-                Favor informar um e-mail válido
+                Favor informar uma senha válida
             </label>
             </div>
             <div class="button">
