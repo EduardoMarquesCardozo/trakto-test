@@ -21,4 +21,5 @@ Navigate to `https://www.trakto.io/` and create a account to be able to login.
 
 ## Run tests
 
-To run the tests you need to use `ng test`.
+To run the tests you need to use `ng test` or `npm run test` in case you don't have angular cli.
+And `npx cypress open` or `npm run cypress` in case you don't have cypress, to run the cypress tests, choose google chrome, and the specs you want to test.
